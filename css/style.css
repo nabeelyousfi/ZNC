@@ -1,0 +1,124 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	height: 450px;
+	/* if image is repeating again then add center two times
+	one center for desktop and one center for mobile versions
+
+	to stop the repeating.. use background-size
+	*/
+	background: url("../img/znc-bg.jpg") center center;
+	background-size: cover;
+}
+
+header .logo {
+	/*background: #999;
+	background-image: url("../img/logo.png"); */
+	width: 50px;
+	height: 50px;
+}
+
+nav {
+	float: right;
+	margin-top: -30px; /* Although not a good practicec to use -ve values but we'll fix it later*/
+	margin-right: 25px;
+}
+
+nav a{
+	display: inline-block;
+	margin-left: 20px;
+	color: #555;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none; /* To remove underline */
+}
+
+/* For hovering nav links */
+nav a:hover {
+	color: #39C;
+}
+
+/* header h1 means
+that we are telling the h1 that 
+is inside the header to style this
+
+this will not effect the whole h1 of page
+*/
+header h1 {
+	text-align: center;
+	font-size: 72px;
+	font-weight: 700; /* 700 = Bold*/
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: 0.5em; /* 1em = 16px */
+}
+
+/* This style is for <span> tag
+only needed for adding decoratin in websites
+
+h1 span means. that span is inside h1
+*/
+
+h1 span {
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	border: 10px solid #FFF;
+}
+
+/* We dont need to add header .kicker 
+because it has a unique name. if we had menu class name
+then we wouldwrite header .menu
+*/
+.kicker {
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	color:#fff;
+}
+
+.logo img {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+footer {
+	background: url("../img/znc-bg.jpg") center center;
+	background-size: cover;	
+}
+
+footer .lockup {
+	padding: 50px 30px;
+}
+
+/* Now there is a difference here
+the .logo in header has different styles
+
+and the .logo in footer has different styles.
+now you will get clear concept
+*/
+footer .logo {
+	width:	50px;
+	height: 50px;
+	float:left;
+	margin-right: 30px;
+}
+
+footer .content-wrap {
+	float: left;
+}
+
+footer .copyright {
+	margin: 0;
+	text-transform: uppercase;
+	color: #555;
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+footer nav a{
+	color: #fff; !important;
+}
